@@ -7,23 +7,24 @@
       src="https://kit.fontawesome.com/17b826000a.js"
       crossorigin="anonymous"
     ></script>
+    <link rel="stylesheet" href="style.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Reservia</title>
   </head>
   <body>
     <!-- Logo et navigation sur site -->
     <header>
-      <img src="Assets/Img/logo/Reservia@3x.png" alt="logo" />
+      <img id="logoReservia" src="Assets/Img/logo/Reservia@3x.png" alt="logo" />
       <nav>
-        <a href="#hebergement">Hébergements</a>
-        <a href="#activities">Activité</a>
-        <a> S'inscrire</a>
+        <a class="nav-items" id="nav-hebergement" href="#hebergement">Hébergements</a>
+        <a class="nav-items" id="nav-activity" href="#activities">Activité</a>
+        <a class="nav-items" id="nav-inscription" > S'inscrire</a>
       </nav>
     </header>
     <!-- Section comportant la recherche et les filtres -->
     <section>
       <h2>Trouvez votre hébergement pour des vacances de rêve</h2>
-      <h5>En plein centre ville ou en pleine nature</h5>
+      <div>En plein centre ville ou en pleine nature</div>
       <form>
         <i class="fas fa-map-marker-alt" aria-hidden="true"></i>
         <input type="text" value="Marseille,France" />
@@ -33,20 +34,28 @@
         <h4>Filtres</h4>
         <ul>
           <li>
+            <button>
             <i class="fas fa-money-bill-wave" aria-hidden="true"></i>
-            <div>Économique</div>
+            <div>Économique</div>              
+            </button>
           </li>
           <li>
-            <i class="fas fa-child" aria-hidden="true"></i>
-            <div>Famillial</div>
+            <button>
+              <i class="fas fa-child" aria-hidden="true"></i>
+              <div>Famillial</div>
+            </button>
           </li>
           <li>
-            <i class="fas fa-heart" aria-hidden="true"></i>
-            <div>Romantique</div>
+            <button>
+              <i class="fas fa-heart" aria-hidden="true"></i>
+              <div>Romantique</div>
+            </button>
           </li>
           <li>
-            <i class="fas fa-dog" aria-hidden="true"></i>
-            <div>Animaux autorisés</div>
+            <button>
+              <i class="fas fa-dog" aria-hidden="true"></i>
+              <div>Animaux autorisés</div>
+            </button>
           </li>
         </ul>
       </div>
@@ -67,7 +76,7 @@
               />
             <figcaption>
               <h4>Auberge la Cannebière</h4>
-              <h5>La nuit à partir de 25€</h5>
+              <div>La nuit à partir de 25€</div>
               <div>★★★★☆</div>
             </figcaption>
             </figure>
@@ -80,8 +89,8 @@
                 alt="Hôtel du port"
               />
             <figcaption>
-              <h4>Hôtel du port</h4>
-              <h5>La nuit à partir de 52€</h5>
+              <h3>Hôtel du port</h3>
+              <div>La nuit à partir de 52€</div>
               <div>★★★★★</div>
             </figcaption>
             </figure>            
@@ -94,8 +103,8 @@
                 alt="Hôtel Les Mouettes"
               />
             <figcaption>
-              <h4>Hôtel Les Mouettes</h4>
-              <h5>La nuit à partir de 76€</h5>
+              <h3>Hôtel Les Mouettes</h3>
+              <div>La nuit à partir de 76€</div>
               <div>★★★★☆</div>
             </figcaption>
             </figure>            
@@ -108,8 +117,8 @@
                 alt="Hôtel de la mer"
               />
             <figcaption>
-              <h4>Hôtel de la mer</h4>
-              <h5>La nuit à partir de 46€</h5>
+              <h3>Hôtel de la mer</h3>
+              <div>La nuit à partir de 46€</div>
               <div>★★★☆☆</div>
             </figcaption>
             </figure>            
@@ -122,8 +131,8 @@
                 alt="Auberge Le Panier"
               />
             <figcaption>
-              <h4>Auberge Le Panier</h4>
-              <h5>La nuit à partir de 23€</h5>
+              <h3>Auberge Le Panier</h3>
+              <div>La nuit à partir de 23€</div>
               <div>★★★★☆</div>
             </figcaption>
             </figure>            
@@ -136,14 +145,14 @@
                 alt="Hôtel chez Amina"
               />
             <figcaption>
-              <h4>Hôtel chez Amina</h4>
-              <h5>La nuit à partir de 96€</h5>
+              <h3>Hôtel chez Amina</h3>
+              <div>La nuit à partir de 96€</div>
               <div>★★★★★</div>
             </figcaption>
             </figure>            
           </a>
         </div>
-      <h4>Afficher plus</h4>
+      <button>Afficher plus</button>
 
       <div>
         <div>
@@ -158,8 +167,8 @@
               alt="Hôtel Le soleil du matin"
             />
           <figcaption>
-            <h4>Hôtel Le soleil du matin</h4>
-            <h5>La nuit à partir de 128€</h5>
+            <h3>Hôtel Le soleil du matin</h3>
+            <div>La nuit à partir de 128€</div>
             <div>★★★★★</div>
           </figcaption>
           </figure>        
@@ -172,8 +181,8 @@
               alt="Au coeur de l'eau Chambres d'hôtes"
             />
           <figcaption>
-            <h4>Au coeur de l'eau Chambres d'hôtes</h4>
-            <h5>La nuit à partir de 71€</h5>
+            <h3>Au coeur de l'eau Chambres d'hôtes</h3>
+            <div>La nuit à partir de 71€</div>
             <div>★★★★☆</div>
           </figcaption>
           </figure>          
@@ -186,8 +195,8 @@
               alt="Hôtel Tout bleu et Blanc"
             />
           <figcaption>
-            <h4>Hôtel Tout bleu et Blanc</h4>
-            <h5>La nuit à partir de 68€</h5>
+            <h3>Hôtel Tout bleu et Blanc</h3>
+            <div>La nuit à partir de 68€</div>
             <div>★★★★☆</div>
           </figcaption>
           </figure>          
@@ -206,7 +215,7 @@
                 alt="Vieux Port"
               />
             <figcaption>
-              <h4>Vieux Port</h4>            
+              <h3>Vieux Port</h3>            
             </figcaption>
             </figure>            
           </a>
@@ -220,7 +229,7 @@
                   alt="Fort de Pomègue"
                 />       
               <figcaption>
-                <h4>Fort de Pomègue</h4>
+                <h3>Fort de Pomègue</h3>
               </figcaption>
               </figure>                          
             </a>
@@ -233,7 +242,7 @@
                 alt="iles de Frioul"
               />        
               <figcaption>
-              <h4>Îles de Frioul</h4>
+              <h3>Îles de Frioul</h3>
               </figcaption>
               </figure>               
             </a>
@@ -247,7 +256,7 @@
                 alt="Parc National des Calanques"
               />            
             <figcaption>
-              <h4>Parc National des Calanques</h4>            
+              <h3>Parc National des Calanques</h3>            
             </figcaption>
             </figure>            
           </a>
@@ -261,7 +270,7 @@
                 alt="Notre Dame-de-la-Garde"
               />
               <figcaption>
-              <h4>Notre Dame-de-la-Garde</h4>
+              <h3>Notre Dame-de-la-Garde</h3>
               </figcaption>
               </figure>              
             </a>
@@ -274,7 +283,7 @@
                 alt="Parc Lompchamp"
               />
               <figcaption>
-              <h4>Parc Lompchamp</h4>              
+              <h3>Parc Lompchamp</h3>              
               </figcaption>
               </figure>              
             </a> 

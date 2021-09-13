@@ -1,0 +1,37 @@
+@font-face {
+  font-family: "Raleway";
+  src: url(Assets/Fonts/Raleway/Raleway-VariableFont_wght.ttf);
+}
+body{
+  font-family: "Raleway";
+}
+header{
+  display: flex;
+  justify-content: space-between;
+}
+#logoReservia{
+  width: 100px;
+  height: 100%;
+}
+nav{
+  display: flex;
+  justify-content: space-around;
+  width: max-content;
+}
+.nav-items{
+  padding: 20px;
+  text-decoration: none;
+}
+#nav-hebergement{
+  color: #0065FC;
+}
+#nav-activity{
+  color: black;
+}
+#nav-inscription{
+  color:#0065FC;
+  font-weight: 700;
+}
+h2{
+  font-weight: bolder;
+}
