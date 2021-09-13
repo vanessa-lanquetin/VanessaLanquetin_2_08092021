@@ -11,23 +11,25 @@
     <title>Reservia</title>
   </head>
   <body>
+    <!-- Logo et navigation sur site -->
     <header>
       <img src="Assets/Img/logo/Reservia@3x.png" alt="logo" />
       <nav>
         <a href="#hebergement">Hébergements</a>
-        <a href="#activities">Activités</a>
+        <a href="#activities">Activité</a>
         <a> S'inscrire</a>
       </nav>
     </header>
+    <!-- Section comportant la recherche et les filtres -->
     <section>
       <h2>Trouvez votre hébergement pour des vacances de rêve</h2>
       <h5>En plein centre ville ou en pleine nature</h5>
-      <div>
+      <form>
         <i class="fas fa-map-marker-alt" aria-hidden="true"></i>
         <input type="text" value="Marseille,France" />
         <button>Rechercher</button>
-      </div>
-      <div>
+      </form>
+      <div id="container-filters">
         <h4>Filtres</h4>
         <ul>
           <li>
@@ -53,156 +55,236 @@
         <h5>Plus de 500 logements sont disponible dans cette ville</h5>
       </div>
     </section>
-    <section id="hebergement">
+    <!-- Section content les hébergements avec un système de notation -->
+    <section id="hebergements">
       <div>
-        <h2>Hébergemets à Marseille</h2>
-        <div>
+        <h2>Hébergements à Marseille</h2>
           <a href="" class="container-hebergement">
-            <img
-              src="Assets/Img/hebergements/4_small/marcus-loke-WQJvWU_HZFo-unsplash.jpg"
-              alt="Auberge la Cannebière"
-            />
-            <h4>Auberge la Cannebière</h4>
-            <h5>La nuit à partir de 25€</h5>
-            <div>★★★★☆</div>
+            <figure>
+              <img
+                src="Assets/Img/hebergements/4_small/marcus-loke-WQJvWU_HZFo-unsplash.jpg"
+                alt="Auberge la Cannebière"
+              />
+            </figure>
+            <figcaption>
+              <h4>Auberge la Cannebière</h4>
+              <h5>La nuit à partir de 25€</h5>
+              <div>★★★★☆</div>
+            </figcaption>
           </a>
+
           <a href="" class="container-hebergement">
-            <img
-              src="Assets/Img/hebergements/4_small/fred-kleber-gTbaxaVLvsg-unsplash.jpg"
-              alt="Hôtel du port"
-            />
-            <h4>Hôtel du port</h4>
-            <h5>La nuit à partir de 52€</h5>
-            <div>★★★★★</div>
+            <figure>
+              <img
+                src="Assets/Img/hebergements/4_small/fred-kleber-gTbaxaVLvsg-unsplash.jpg"
+                alt="Hôtel du port"
+              />
+            </figure>
+            <figcaption>
+              <h4>Hôtel du port</h4>
+              <h5>La nuit à partir de 52€</h5>
+              <div>★★★★★</div>
+            </figcaption>
           </a>
+
           <a href="" class="container-hebergement">
-            <img
-              src="Assets/Img/hebergements/4_small/reisetopia-B8WIgxA_PFU-unsplash.jpg"
-              alt="Hôtel Les Mouettes"
-            />
-            <h4>Hôtel Les Mouettes</h4>
-            <h5>La nuit à partir de 76€</h5>
-            <div>★★★★☆</div>
+            <figure>
+              <img
+                src="Assets/Img/hebergements/4_small/reisetopia-B8WIgxA_PFU-unsplash.jpg"
+                alt="Hôtel Les Mouettes"
+              />
+            </figure>
+            <figcaption>
+              <h4>Hôtel Les Mouettes</h4>
+              <h5>La nuit à partir de 76€</h5>
+              <div>★★★★☆</div>
+            </figcaption>
           </a>
+
           <a href="" class="container-hebergement">
-            <img
-              src="Assets/Img/hebergements/4_small/annie-spratt-Eg1qcIitAuA-unsplash.jpg"
-              alt="Hôtel de la mer"
-            />
-            <h4>Hôtel de la mer</h4>
-            <h5>La nuit à partir de 46€</h5>
-            <div>★★★☆☆</div>
+            <figure>
+              <img
+                src="Assets/Img/hebergements/4_small/annie-spratt-Eg1qcIitAuA-unsplash.jpg"
+                alt="Hôtel de la mer"
+              />
+            </figure>
+            <figcaption>
+              <h4>Hôtel de la mer</h4>
+              <h5>La nuit à partir de 46€</h5>
+              <div>★★★☆☆</div>
+            </figcaption>
           </a>
+
           <a href="" class="container-hebergement">
-            <img
-              src="Assets/Img/hebergements/4_small/nicate-lee-kT-ZyaiwBe0-unsplash.jpg"
-              alt="Auberge Le Panier"
-            />
-            <h4>Auberge Le Panier</h4>
-            <h5>La nuit à partir de 23€</h5>
-            <div>★★★★☆</div>
+            <figure>
+              <img
+                src="Assets/Img/hebergements/4_small/nicate-lee-kT-ZyaiwBe0-unsplash.jpg"
+                alt="Auberge Le Panier"
+              />
+            </figure>
+            <figcaption>
+              <h4>Auberge Le Panier</h4>
+              <h5>La nuit à partir de 23€</h5>
+              <div>★★★★☆</div>
+            </figcaption>
           </a>
+
           <a href="" class="container-hebergement">
-            <img
-              src="Assets/Img/hebergements/4_small/febrian-zakaria-M6S1WvfW68A-unsplash.jpg"
-              alt="Hôtel chez Amina"
-            />
-            <h4>Hôtel chez Amina</h4>
-            <h5>La nuit à partir de 96€</h5>
-            <div>★★★★★</div>
+            <figure>
+              <img
+                src="Assets/Img/hebergements/4_small/febrian-zakaria-M6S1WvfW68A-unsplash.jpg"
+                alt="Hôtel chez Amina"
+              />
+            </figure>
+            <figcaption>
+              <h4>Hôtel chez Amina</h4>
+              <h5>La nuit à partir de 96€</h5>
+              <div>★★★★★</div>
+            </figcaption>
           </a>
         </div>
         <h4>Afficher plus</h4>
       </div>
+
       <div>
         <div>
           <h2>Les plus populaires</h2>
           <i class="fas fa-chart-line" aria-hidden="true"></i>
         </div>
+
         <a href="" class="container-hebergement">
-          <img
-            src="Assets/Img/hebergements/4_small/emile-guillemot-Bj_rcSC5XfE-unsplash.jpg"
-            alt="Hôtel Le soleil du matin"
-          />
-          <h4>Hôtel Le soleil du matin</h4>
-          <h5>La nuit à partir de 128€</h5>
-          <div>★★★★★</div>
+          <figure>
+            <img
+              src="Assets/Img/hebergements/4_small/emile-guillemot-Bj_rcSC5XfE-unsplash.jpg"
+              alt="Hôtel Le soleil du matin"
+            />
+          </figure>
+          <figcaption>
+            <h4>Hôtel Le soleil du matin</h4>
+            <h5>La nuit à partir de 128€</h5>
+            <div>★★★★★</div>
+          </figcaption>
         </a>
+
         <a href="" class="container-hebergement">
-          <img
-            src="Assets/Img/hebergements/4_small/aw-creative-VGs8z60yT2c-unsplash.jpg"
-            alt="Au coeur de l'eau Chambres d'hôtes"
-          />
-          <h4>Au coeur de l'eau Chambres d'hôtes</h4>
-          <h5>La nuit à partir de 71€</h5>
-          <div>★★★★☆</div>
+          <figure>
+            <img
+              src="Assets/Img/hebergements/4_small/aw-creative-VGs8z60yT2c-unsplash.jpg"
+              alt="Au coeur de l'eau Chambres d'hôtes"
+            />
+          </figure>
+          <figcaption>
+            <h4>Au coeur de l'eau Chambres d'hôtes</h4>
+            <h5>La nuit à partir de 71€</h5>
+            <div>★★★★☆</div>
+          </figcaption>
         </a>
+
         <a href="" class="container-hebergement">
-          <img
-            src="Assets/Img/hebergements/4_small/febrian-zakaria-sjvU0THccQA-unsplash.jpg"
-            alt="Hôtel Tout bleu et Blanc"
-          />
-          <h4>Hôtel Tout bleu et Blanc</h4>
-          <h5>La nuit à partir de 68€</h5>
-          <div>★★★★☆</div>
+          <figure>
+            <img
+              src="Assets/Img/hebergements/4_small/febrian-zakaria-sjvU0THccQA-unsplash.jpg"
+              alt="Hôtel Tout bleu et Blanc"
+            />
+          </figure>
+          <figcaption>
+            <h4>Hôtel Tout bleu et Blanc</h4>
+            <h5>La nuit à partir de 68€</h5>
+            <div>★★★★☆</div>
+          </figcaption>
         </a>
+
       </div>
     </section>
     <section id="activities">
       <h2>Activités à Marseille</h2>
-      <div class="activity-container">
-        <a href="" class="activity-column">
-          <div class="activity-item">
-            <h4>Vieux Port</h4>
-            <img
-              src="Assets/Img/activites/4_small/reno-laithienne-QUgJhdY5Fyk-unsplash.jpg"
-              alt="Vieux Port"
-            />
+        <div class="activity-list">
+              <!-- 1ère activité --> 
+          <a href="" class="container-activity">
+            <figure>
+              <img
+                src="Assets/Img/activites/4_small/reno-laithienne-QUgJhdY5Fyk-unsplash.jpg"
+                alt="Vieux Port"
+              />            
+            </figure>
+            <figcaption>
+              <h4>Vieux Port</h4>            
+            </figcaption>
+          </a>
+
+            <div  class="container-activity-column">
+              <!-- 2ème activité -->   
+            <a href="" class="container-activity">
+              <figure>
+                <img
+                  src="Assets/Img/activites/4_small/paul-hermann-QFTrLdQIRhI-unsplash.jpg"
+                  alt="Fort de Pomègue"
+                />            
+              </figure>
+              <figcaption>
+                <h4>Fort de Pomègue</h4>
+              </figcaption>            
+            </a>
+
+              <!-- 3ème activité -->   
+            <a href="" class="container-activity">
+              <figure>
+              <img
+                src="Assets/Img/activites/4_small/kevin-hikari-rV_Qd1l-VXg-unsplash.jpg"
+                alt="iles de Frioul"
+              />        
+              </figure>
+              <figcaption>
+              <h4>Îles de Frioul</h4>
+              </figcaption> 
+            </a>
           </div>
-        </a>
-        <a href="" class="activity-column">
-          <div class="activity-item">
-            <h4>Fort de Pomègue</h4>
-            <img
-              src="Assets/Img/activites/4_small/paul-hermann-QFTrLdQIRhI-unsplash.jpg"
-              alt="Fort de Pomègue"
-            />
+
+              <!-- 4ème activité -->   
+          <a href="" class="container-activity">
+            <figure>
+              <img
+                src="Assets/Img/activites/4_small/kilyan-sockalingum-NR8-cBCN3aI-unsplash.jpg"
+                alt="Parc National des Calanques"
+              />            
+            </figure>
+            <figcaption>
+              <h4>Parc National des Calanques</h4>            
+            </figcaption>
+          </a>
+
+          <div class="container-activity-column">
+              <!-- 5ème activité -->   
+            <a href="" class="container-activity">
+              <figure>
+              <img
+                src="Assets/Img/activites/4_small/florian-wehde-xW9e8gdotxI-unsplash.jpg"
+                alt="Notre Dame-de-la-Garde"
+              />
+              </figure>
+              <figcaption>
+              <h4>Notre Dame-de-la-Garde</h4>
+              </figcaption>
+            </a>
+
+              <!-- 6ème activité --> 
+            <a href="" class="container-activity">
+              <figure>
+              <img
+                src="Assets/Img/activites/4_small/lena-paulin-wH2-EJoDcV0-unsplash.jpg"
+                alt="Parc Lompchamp"
+              />
+              </figure>
+              <figcaption>
+              <h4>Parc Lompchamp</h4>              
+              </figcaption>
+            </a> 
           </div>
-          <div class="activity-item">
-            <h4>Îles de Frioul</h4>
-            <img
-              src="Assets/Img/activites/4_small/kevin-hikari-rV_Qd1l-VXg-unsplash.jpg"
-              alt="iles de Frioul"
-            />
-          </div>
-        </a>
-        <a href="" class="activity-column">
-          <div class="activity-item">
-            <h4>Parc National des Calanques</h4>
-            <img
-              src="Assets/Img/activites/4_small/kilyan-sockalingum-NR8-cBCN3aI-unsplash.jpg"
-              alt="Parc National des Calanques"
-            />
-          </div>
-        </a>
-        <a href="" class="activity-column">
-          <div class="activity-item">
-            <h4>Notre Dame-de-la-Garde</h4>
-            <img
-              src="Assets/Img/activites/4_small/florian-wehde-xW9e8gdotxI-unsplash.jpg"
-              alt="Notre Dame-de-la-Garde"
-            />
-          </div>
-          <div class="activity-item">
-            <h4>Parc Lompchamp</h4>
-            <img
-              src="Assets/Img/activites/4_small/lena-paulin-wH2-EJoDcV0-unsplash.jpg"
-              alt="Parc Lompchamp"
-            />
-          </div>
-        </a>
+
+        </div>
       </div>
     </section>
+    <!-- Informations, contact -->
     <footer>
       <div>
         <h4>A propos</h4>
@@ -211,7 +293,7 @@
         <a href="">Données et confidentialité</a>
       </div>
       <div>
-        <h4>Nos hébergement</h4>
+        <h4>Nos hébergements</h4>
         <a href="">Charte qualité</a>
         <a href="">Soumettre votre hôtel</a>
       </div>
