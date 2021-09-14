@@ -3,168 +3,169 @@
   font-family: "Raleway";
   src: url(Assets/Fonts/Raleway/Raleway-VariableFont_wght.ttf);
 }
-h2{
-  font-weight:bold;
+h2 {
+  font-weight: bold;
   font-size: 1.5em;
-  
 }
-h3{
-  font-weight:bold;
-  font-size: 0.7em;  
+h3 {
+  font-weight: bold;
+  font-size: 0.7em;
   line-height: 0;
 }
-h4{
-  font-weight:bold;
-  font-size: 1.1em;   
+h4 {
+  font-weight: bold;
+  font-size: 1.1em;
 }
 /* Général */
-body{
+body {
   font-family: "Raleway";
   margin-left: 60px;
 }
-a{
+a {
   text-decoration: none;
   color: black;
 }
 /* header */
-header{
+header {
   display: flex;
   justify-content: space-between;
 }
-#logoReservia{
+#logoReservia {
   width: 100px;
   height: 100%;
 }
-nav{
+nav {
   display: flex;
   justify-content: space-around;
   width: max-content;
 }
-.nav-items{
+.nav-items {
   padding: 20px;
   text-decoration: none;
 }
-#nav-hebergement{
-  color: #0065FC;
+#nav-hebergement {
+  color: #0065fc;
 }
-#nav-activity{
+#nav-activity {
   color: black;
 }
-#nav-inscription{
-  color:#0065FC;
+#nav-inscription {
+  color: #0065fc;
   font-weight: 700;
 }
 /* Section 1 */
 
 /* SearchBar */
-form{
+form {
   margin-top: 20px;
 }
-.fa-map-marker-alt{
-  background-color:#F2F2F2;
+.fa-map-marker-alt {
+  background-color: #f2f2f2;
   padding: 10px;
   border-top-left-radius: 10px;
   border-bottom-left-radius: 10px;
 }
-input{
-  border:2px solid #F2F2F2;
+input {
+  border: 2px solid #f2f2f2;
   border-right: none;
-  border-left: none;  
+  border-left: none;
   padding: 10px;
   font-weight: bold;
 }
-#search{
-  background-color: #0065FC;
+#search {
+  background-color: #0065fc;
   color: #ffffff;
   border-top-right-radius: 10px;
   border-bottom-right-radius: 10px;
-  border-color: #0065FC;
+  border-color: #0065fc;
   padding: 10px;
 }
 /* Filters */
-#container-filters{
-  display: flex;
+#container-filters {
   margin-top: 20px;
 }
-li{
-  margin-top: 10px;
+ul {
+  display: flex;
+}
+li {
   list-style: none;
 }
-.btn-filter{
-  display: flex;
-  flex-direction: row;
-  border: 4px solid #F2F2F2;
+#filters{
+  padding-top: 15px;
+}
+.btn-filter {
+  border: 4px solid #f2f2f2;
   border-radius: 30px;
   background-color: #ffffff;
   margin-left: 30px;
+  padding: 0 15px 0 0;
 }
-.icon-filter{
-  color: #0065FC;
-  background-color: #DEEBFF;
-  border-radius: 10px;
-  width: max-content;
-  padding: 10px;
+.icon-filter {
+  color: #0065fc;
+  background-color: #deebff;
+  padding: 12px 15px 12px 15px;
+  border-radius: 60px;
 }
-.text-filter{
-  padding: 10px;
+.text-filter {
   font-weight: bold;
-  font-size: 1.1em;
+  font-size: 1em;
 }
 /* Infos */
-#container-infos{
+#container-infos {
   display: flex;
   margin-top: 20px;
 }
-#icon-infos{
-  color: #0065FC;
+#icon-infos {
+  color: #0065fc;
   padding: 2px 5px 2px 5px;
   border-radius: 60px;
-  border: 4px solid #F2F2F2;
+  border: 4px solid #f2f2f2;
   font-size: 13px;
   margin-right: 10px;
 }
-#text-infos{
+#text-infos {
   padding-top: 2px;
 }
 /* Section 2 */
 /* Commun aux 2 parties */
-#hebergements{
+#hebergements {
+  margin-top: 30px;
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
 }
-.partHebergements{
-  background-color: #F2F2F2;
+.partHebergements {
+  background-color: #f2f2f2;
   border-radius: 10px;
   display: flex;
 }
-figure{
+figure {
   background-color: #ffffff;
   border: white 4px solid;
   border-radius: 10px;
 }
-figcaption{
-  padding:8px
+figcaption {
+  padding: 8px;
 }
-.priceNight{
+.priceNight {
   font-size: 0.6em;
 }
-span{
+span {
   font-weight: bold;
 }
 /* Partie gauche */
-.part-left{
+.part-left {
   flex-wrap: wrap;
   max-width: 600px;
   flex-grow: 1;
 }
-.imgHebergement-left{
+.imgHebergement-left {
   width: 200px;
   height: 100px;
   border-top-left-radius: 10px;
   border-top-right-radius: 10px;
 }
 /* Partie droite */
-.imgHebergement-right{
+.imgHebergement-right {
   width: 120px;
   height: 120px;
   border-top-left-radius: 10px;
