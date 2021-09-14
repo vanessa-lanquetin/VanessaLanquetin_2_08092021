@@ -6,12 +6,12 @@
 h2 {
   margin-top:40px;
   font-weight: bold;
-  font-size: 1em;
+  font-size: 1.5em;
   line-height: 0;
 }
 h3 {
   font-weight: bold;
-  font-size: 0.7em;
+  font-size: 0.8em;
   line-height: 0;
 }
 h4 {
@@ -21,7 +21,7 @@ h4 {
 /* Général */
 body {
   font-family: "Raleway";
-  margin-left: 60px;
+  margin: 30px 60px 30px 60px;
 }
 a {
   text-decoration: none;
@@ -88,6 +88,7 @@ input {
 }
 ul {
   display: flex;
+  padding: 0;
 }
 li {
   list-style: none;
@@ -106,6 +107,7 @@ li {
   color: #0065fc;
   background-color: #deebff;
   padding: 12px 15px 12px 15px;
+  margin-right: 5px;
   border-radius: 60px;
 }
 .text-filter {
@@ -134,7 +136,6 @@ li {
   margin-top: 30px;
   display: flex;
   justify-content: space-between;
-  
 }
 .partHebergements {
   background-color: #f2f2f2;
@@ -154,7 +155,7 @@ figcaption {
   padding: 8px;
 }
 .priceNight {
-  font-size: 0.6em;
+  font-size: 0.7em;
 }
 span {
   font-weight: bold;
@@ -164,7 +165,7 @@ span {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  max-width: 900px;
+  max-width: 910px;
   flex-grow: 1;
 }
 .imgHebergement-left {
@@ -172,6 +173,13 @@ span {
   height: 100px;
   border-top-left-radius: 10px;
   border-top-right-radius: 10px;
+}
+#btn-more{
+  border: none;
+  background-color: transparent;
+  font-weight: bold;
+  padding-left: 40px;
+  margin-bottom: 30px;
 }
 /* Partie droite */
 #container-title-hebergement{
@@ -185,6 +193,7 @@ span {
 .figure-right{
   display: flex;
   flex-direction: row;
+    margin-bottom: 30px;
 }
 .imgHebergement-right {
   width: 120px;
@@ -192,4 +201,5 @@ span {
   border-top-left-radius: 10px;
   border-bottom-left-radius: 10px;
 }
+
 
