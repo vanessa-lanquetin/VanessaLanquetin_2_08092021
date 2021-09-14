@@ -4,8 +4,10 @@
   src: url(Assets/Fonts/Raleway/Raleway-VariableFont_wght.ttf);
 }
 h2 {
+  margin-top:40px;
   font-weight: bold;
-  font-size: 1.5em;
+  font-size: 1em;
+  line-height: 0;
 }
 h3 {
   font-weight: bold;
@@ -172,6 +174,14 @@ span {
   border-top-right-radius: 10px;
 }
 /* Partie droite */
+#container-title-hebergement{
+  display: flex;
+  justify-content: space-between;
+}
+#icon-popular{
+  padding-top: 30px;
+  padding-right: 30px;
+}
 .figure-right{
   display: flex;
   flex-direction: row;
@@ -182,3 +192,4 @@ span {
   border-top-left-radius: 10px;
   border-bottom-left-radius: 10px;
 }
+
