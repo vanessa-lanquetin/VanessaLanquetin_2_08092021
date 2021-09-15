@@ -23,12 +23,22 @@ h4 {
 body {
   font-family: "Raleway";
   margin: 30px 60px 30px 60px;
+  padding:0;
 }
 a {
   text-decoration: none;
   color: black;
 }
-
+figure {
+  background-color: #ffffff;
+  border: white 4px solid;
+  border-radius: 10px;
+  margin: 0px 10px 20px 10px;
+  box-shadow: rgba(0, 0, 0, 0.075) 0px 5px 2px;
+}
+figcaption {
+  padding: 8px;
+}
 /* header */
 header {
   display: flex;
@@ -125,7 +135,7 @@ li {
   color: #0065fc;
   padding: 2px 5px 2px 5px;
   border-radius: 60px;
-  border: 4px solid #f2f2f2;
+  border: 4px solid rgb(242, 242, 242);
   font-size: 13px;
   margin-right: 10px;
 }
@@ -145,18 +155,9 @@ li {
   border-radius: 10px;
   display: flex;
   flex-direction: column;
-  width: fit-content;
 }
 .title-hebergement {
   padding-left: 40px;
-}
-figure {
-  background-color: #ffffff;
-  border: white 4px solid;
-  border-radius: 10px;
-}
-figcaption {
-  padding: 8px;
 }
 .priceNight {
   font-size: 0.7em;
@@ -169,7 +170,8 @@ span {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  max-width: 910px;
+  margin-top: 10px;
+  max-width: 930px;
 }
 .imgHebergement-left {
   width: 200px;
@@ -196,11 +198,31 @@ span {
 .figure-right {
   display: flex;
   flex-direction: row;
-  margin-bottom: 30px;
+  margin: 20px;
 }
 .imgHebergement-right {
   width: 120px;
   height: 120px;
   border-top-left-radius: 10px;
   border-bottom-left-radius: 10px;
+}
+/* Section 3 */
+.activity-list{
+  display: flex;
+}
+.figure-activity{
+  width: min-content;
+  margin: 0px 20px 20px 0px;
+}
+.img-activity{
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+.imgTall{
+  width: 300px;
+  height: 300px;
+}
+.imgSmall{
+  width: 200px;
+  height: 110px;
 }
