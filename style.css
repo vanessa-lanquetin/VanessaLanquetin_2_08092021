@@ -150,7 +150,6 @@ li {
 .title-hebergement {
   padding-left: 40px;
 }
-/* Figure */
 figure {
   background-color: #ffffff;
   border: white 4px solid;
@@ -164,25 +163,6 @@ figcaption {
 }
 span {
   font-weight: bold;
-}
-/* Notation Star */
-.rating {
-  direction:rtl;
-}
-.rating a {
-  color: #aaa;
-  text-decoration: none;
-  font-size: 3em;
-  transition: color .4s;
-  font-size: 20px;
-  text-align: left;
-}
-.rating a:hover,
-.rating a:focus,
-.rating a:hover ~ a,
-.rating a:focus ~ a {
-  color: #0065fc;
-  cursor: pointer;
 }
 /* Partie gauche */
 .part-left {
@@ -218,15 +198,9 @@ span {
   flex-direction: row;
   margin-bottom: 30px;
 }
-.figcaption-right{
-  padding-left: 15px;
-}
 .imgHebergement-right {
   width: 120px;
   height: 120px;
   border-top-left-radius: 10px;
   border-bottom-left-radius: 10px;
-}
-.rating-right{
-  margin-top: 30px;
 }
