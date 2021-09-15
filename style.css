@@ -166,7 +166,9 @@ span {
   font-weight: bold;
 }
 /* Notation Star */
-
+.rating {
+  direction:rtl;
+}
 .rating a {
   color: #aaa;
   text-decoration: none;
