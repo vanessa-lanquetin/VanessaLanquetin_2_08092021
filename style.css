@@ -4,7 +4,7 @@
   src: url(Assets/Fonts/Raleway/Raleway-VariableFont_wght.ttf);
 }
 h2 {
-  margin-top:40px;
+  margin-top: 40px;
   font-weight: bold;
   font-size: 1.5em;
   line-height: 0;
@@ -18,6 +18,7 @@ h4 {
   font-weight: bold;
   font-size: 1.1em;
 }
+
 /* Général */
 body {
   font-family: "Raleway";
@@ -27,6 +28,7 @@ a {
   text-decoration: none;
   color: black;
 }
+
 /* header */
 header {
   display: flex;
@@ -55,8 +57,8 @@ nav {
   color: #0065fc;
   font-weight: 700;
 }
-/* Section 1 */
 
+/* Section 1 */
 /* SearchBar */
 form {
   margin-top: 20px;
@@ -93,7 +95,7 @@ ul {
 li {
   list-style: none;
 }
-#filters{
+#filters {
   padding-top: 15px;
 }
 .btn-filter {
@@ -136,16 +138,19 @@ li {
   margin-top: 30px;
   display: flex;
   justify-content: space-between;
+  width: 100%;
 }
 .partHebergements {
   background-color: #f2f2f2;
   border-radius: 10px;
   display: flex;
   flex-direction: column;
+  width: fit-content;
 }
-.title-hebergement{
+.title-hebergement {
   padding-left: 40px;
 }
+/* Figure */
 figure {
   background-color: #ffffff;
   border: white 4px solid;
@@ -160,13 +165,29 @@ figcaption {
 span {
   font-weight: bold;
 }
+/* Notation Star */
+
+.rating a {
+  color: #aaa;
+  text-decoration: none;
+  font-size: 3em;
+  transition: color .4s;
+  font-size: 20px;
+  text-align: left;
+}
+.rating a:hover,
+.rating a:focus,
+.rating a:hover ~ a,
+.rating a:focus ~ a {
+  color: #0065fc;
+  cursor: pointer;
+}
 /* Partie gauche */
 .part-left {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
   max-width: 910px;
-  flex-grow: 1;
 }
 .imgHebergement-left {
   width: 200px;
@@ -174,7 +195,7 @@ span {
   border-top-left-radius: 10px;
   border-top-right-radius: 10px;
 }
-#btn-more{
+#btn-more {
   border: none;
   background-color: transparent;
   font-weight: bold;
@@ -182,18 +203,21 @@ span {
   margin-bottom: 30px;
 }
 /* Partie droite */
-#container-title-hebergement{
+#container-title-hebergement {
   display: flex;
   justify-content: space-between;
 }
-#icon-popular{
+#icon-popular {
   padding-top: 30px;
   padding-right: 30px;
 }
-.figure-right{
+.figure-right {
   display: flex;
   flex-direction: row;
-    margin-bottom: 30px;
+  margin-bottom: 30px;
+}
+.figcaption-right{
+  padding-left: 15px;
 }
 .imgHebergement-right {
   width: 120px;
@@ -201,5 +225,6 @@ span {
   border-top-left-radius: 10px;
   border-bottom-left-radius: 10px;
 }
-
-
+.rating-right{
+  margin-top: 30px;
+}
