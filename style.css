@@ -17,17 +17,22 @@ h3 {
 h4 {
   font-weight: bold;
   font-size: 1.1em;
+  line-height: 0;
 }
 
 /* Général */
 body {
   font-family: "Raleway";
-  margin: 30px 60px 30px 60px;
   padding:0;
+  margin: 0;
+  padding: 0;
 }
 a {
   text-decoration: none;
   color: black;
+}
+section, header{
+    margin: 30px 60px 30px 60px;
 }
 figure {
   background-color: #ffffff;
@@ -235,4 +240,19 @@ span {
 .imgSmall{
   width: 200px;
   height: 110px;
+}
+/* Footer */
+footer{
+  background-color: #f2f2f2;
+  width:100%;
+  display: flex;
+  justify-content:left
+}
+.container-itemsFooter{
+  display: flex;
+  flex-direction: column;
+  margin: 30px 190px 70px 70px;
+}
+.itemFooter{
+  line-height: 30px;
 }
