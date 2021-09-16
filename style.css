@@ -108,6 +108,7 @@ input {
 ul {
   display: flex;
   padding: 0;
+  flex-wrap: wrap;  
 }
 li {
   list-style: none;
@@ -173,32 +174,38 @@ li {
 span {
   font-weight: bold;
 }
-.rating2 {
-  direction: rtl;
-  margin-top: 5px;
-}
-
+/* Rating stars */
+/* Définition du style de l'étoile */
 .rating {
+  direction: rtl; /* Direction inversée pour que ça s'affiche correctement */
   font-size: 0.7em;
-  overflow: hidden;
   display: flex;
   justify-content: left;
+  margin-top: 5px;
+  color:#f2f2f2 ;
 }
-.rating2 a {
-  float: none;
+/* Régagles des ratings */
+.rating1 i:nth-of-type(5) { /* Grâce à "direction: rtl", le sens est inversé, Je sélectionne l'élément qui se trouve à cet emplacement (5) , c'est l'étoile 1 */
+  color: #0065fc; /* L'étoile 1 sera bleu */
 }
-.rating a {
-  padding-right: 2px;
-  color: #aaa;
-  text-decoration: none;
-  transition: color 0.4s;
+.rating2 i:nth-of-type(4)~i, /* Je sélectionne les élements qui sont après (4), je sélectionne l'étoile 1 (5)*/
+.rating2 i:nth-of-type(4) { /* Je sélectionne l'étoile 2 (4) */
+  color: #0065fc; /* L'étoile 1 et 2 seront bleu*/
 }
-.rating a:hover,
-.rating a:focus,
-.rating a:hover ~ a,
-.rating a:focus ~ a {
+/* Je repète l'opération pour les autres étoiles */
+.rating3 i:nth-of-type(3)~i,
+.rating3 i:nth-of-type(3) {
   color: #0065fc;
-  cursor: pointer;
+}
+
+.rating4 i:nth-of-type(2)~i,
+.rating4 i:nth-of-type(2) {
+  color: #0065fc;
+}
+
+.rating5 i:nth-of-type(1)~i,
+.rating5 i:nth-of-type(1) {
+  color: #0065fc;
 }
 /* Partie gauche */
 .partHebergements-left{
