@@ -154,8 +154,8 @@ li {
 #hebergements {
   margin-top: 30px;
   display: flex;
-  justify-content: space-between;
-  flex-wrap: wrap;
+  justify-content: space-around;
+  flex-grow: 1;
   
 }
 .partHebergements {
@@ -201,12 +201,15 @@ span {
   cursor: pointer;
 }
 /* Partie gauche */
+.partHebergements-left{
+  margin-right: 20px;
+}
 .part-left {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
   margin: 20px 0px 0px 20px;
-  width:900px;
+
 }
 .imgHebergement-left {
   width: 260px;
