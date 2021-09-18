@@ -26,12 +26,13 @@ body {
   padding: 0;
   margin: 0;
 }
+#main-content {
+  padding: 30px 60px;
+  box-sizing: border-box;
+}
 a {
   text-decoration: none;
   color: black;
-}
-section,header {
-  margin: 30px 60px 30px 60px;
 }
 figure {
   background-color: #ffffff;
@@ -52,16 +53,26 @@ figcaption {
 /* header */
 header {
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-between;
 }
+/* Header version Desktop */
+#container-navDesktop{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  width: 100%;
+}
 #logoReservia {
+  margin: 0 60px;
   width: 100px;
-  height: 100%;
+  object-fit: contain;
 }
 nav {
   display: flex;
+  margin: 0 60px;
+  flex-wrap: wrap;
   justify-content: space-around;
-  width: max-content;
 }
 .nav-items {
   padding: 20px;
@@ -79,7 +90,9 @@ nav {
   color: #0065fc;
   font-weight: 700;
 }
-
+#container-navMobile{
+  display: none;
+}
 /* Section 1 */
 /* SearchBar */
 form {
@@ -105,6 +118,10 @@ input {
   border-bottom-right-radius: 10px;
   border-color: #0065fc;
   padding: 10px;
+  cursor: pointer;
+}
+#search:hover{
+    transform: scale(1.1);
 }
 /* Filters */
 #container-filters {
@@ -127,11 +144,12 @@ li {
 }
 .btn-filter {
   display: flex;
-  border: 4px solid #f2f2f2;
+  border: 3px solid #f2f2f2;
   border-radius: 30px;
   background-color: #ffffff;
   padding: 0 15px 0 0;
   align-items: center;
+  cursor: pointer;
 }
 .btn-filter:hover {
   transform: scale(1.2);
@@ -159,7 +177,7 @@ li {
   color: #0065fc;
   padding: 2px 5px 2px 5px;
   border-radius: 60px;
-  border: 4px solid rgb(242, 242, 242);
+  border: 3px solid rgb(242, 242, 242);
   font-size: 13px;
   margin-right: 10px;
 }
@@ -269,7 +287,6 @@ span {
   padding-right: 30px;
 }
 .figure-right {
-  width: 320px;
   display: flex;
   flex-direction: row;
   margin: 20px;
@@ -289,7 +306,7 @@ span {
   display: flex;
   flex-direction: column;
 }
-.activity-list {
+#activity-list {
   margin-top: 20px;
   display: flex;
   flex-grow: 1;
@@ -308,24 +325,26 @@ span {
   height: 440px;
 }
 .imgSmall {
-  min-width: 350px;
+  min-width: 330px;
   height: 180px;
 } 
 /* Footer */
 footer {
   background-color: #f2f2f2;
-  width: 100%;
   display: flex;
-  justify-content: left;
-  flex-wrap: wrap;
+  justify-content: space-between;
+  flex-grow: 1;
+  padding: 20px 60px;
 }
 .container-itemsFooter {
   display: flex;
   flex-direction: column;
-  margin: 30px 300px 70px 70px;
 }
 .itemFooter {
   line-height: 30px;
+}
+.itemFooter:hover{
+  color: #0065fc;
 }
 
 /* Media queries */
@@ -338,66 +357,60 @@ footer {
     margin-bottom: 20px;
     width: 100%;
   }
-  .partHebergements{
-    width: fit-content;
-  }
   /* Section 3 */
   #activities{
-    overflow: auto;
+  overflow: auto;
   }
 }
-@media screen and (max-width:1280px){
-  footer{
-    flex-direction: column;
-  }
-}
-@media screen and (max-width:980px){
+@media screen and (max-width:972px){
   #container-filters{
     display: block;
   }
 }
-@media screen and (max-width:470px){
-  section, header{
-    margin: 0;
-  }
-  nav{
-    display: none;
-  }
-}
-@media screen and (max-width:376px){
-  form{
-    display: flex;
-  }
-  ul{
-    flex-direction: column;
-  }
-  li{
-    margin-bottom: 10px;
-  }
-  #container-infos{
-    align-items: center;
-  }
-  #hebergements{
-    flex-direction: column-reverse;
-    width: 100%;
-  }
-  .partHebergements-right{
-    margin-bottom: 30px;
-  }
-  .figure-right {
-    width: 240px;
-}
-  #activities{
-    overflow: unset;
-    margin: 50px;
-    width: 100%;
-  }
-  .activity-list{
-    flex-direction: column;
-  }
+@media screen and (max-width:710px){
   footer{
     display: flex;
     flex-direction: column;
+    gap: 0;
+  }
+}
+@media screen and (max-width:376px){
+  #main-content{
+    padding:0;
+  }
+  #activities,#introduction{
+    padding:0 15px;
+  }
+  #container-navDesktop{
+    display: none;
+  }
+  #container-navMobile{
+    display: flex;
+    flex-direction: column;
+  }
+  #hebergements{
+    display: flex;
+    flex-direction: column-reverse;
+  }
+  .imgHebergement-left{
     width: 100%;
+    height: inherit;
+  }
+  .partHebergements-right{
+    margin-bottom: 20px;
+  }
+    /* Section 3 */
+  #activities{
+    overflow:unset;
+  }
+  #activity-list{
+    display: flex;
+    flex-direction: column;
+  }
+  .figure-activity{
+    margin: 0 0 15px 0;
+  }
+  footer{
+    padding: 20px;
   }
 }
