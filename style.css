@@ -445,9 +445,8 @@ footer {
   }
 }
 @media screen and (max-width: 375px) {
-  #search {
-    margin-top: 5px;
-    border-top-left-radius: 10px;
-    border-bottom-left-radius: 10px;
+  /* Section 1 */
+  input{
+    min-width: 110px;
   }
 }
