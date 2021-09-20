@@ -41,7 +41,7 @@ figure {
   margin: 0px 20px 20px 10px;
   box-shadow: rgba(0, 0, 0, 0.075) 0px 5px 2px;
 }
-figure:hover{
+figure:hover {
   transform: scale(1.1);
   transition: 100ms;
 }
@@ -56,8 +56,37 @@ header {
   flex-wrap: wrap;
   justify-content: space-between;
 }
+/* Header version mobile */
+#container-navMobile {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+#container-logo {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+}
+#nav-mobile {
+  display: flex;
+  flex-direction: row;
+  flex-grow: 1;
+  width: 100%;
+  justify-content: center;
+  text-align: center;
+}
+#nav-hebergement-mobile {
+  color: #0065fc;
+  border-bottom: 2px solid #0065fc;
+  flex-grow: 1;
+}
+#nav-activity-mobile {
+  border-bottom: 2px solid #f2f2f2;
+  flex-grow: 1;
+}
+
 /* Header version Desktop */
-#container-navDesktop{
+#container-navDesktop {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
@@ -90,7 +119,7 @@ nav {
   color: #0065fc;
   font-weight: 700;
 }
-#container-navMobile{
+#container-navMobile {
   display: none;
 }
 /* Section 1 */
@@ -106,8 +135,6 @@ form {
 }
 input {
   border: 2px solid #f2f2f2;
-  border-right: none;
-  border-left: none;
   padding: 10px;
   font-weight: bold;
 }
@@ -120,24 +147,23 @@ input {
   padding: 10px;
   cursor: pointer;
 }
-#search:hover{
-    transform: scale(1.1);
+#search:hover {
+  transform: scale(1.1);
 }
 /* Filters */
 #container-filters {
   margin-top: 20px;
   display: flex;
   align-items: center;
-      
 }
-#filters{
+#filters {
   margin-right: 30px;
 }
 ul {
   display: flex;
   padding: 0;
   flex-wrap: wrap;
-  gap: 30px
+  gap: 30px;
 }
 li {
   list-style: none;
@@ -154,7 +180,7 @@ li {
 .btn-filter:hover {
   transform: scale(1.2);
   transition: 100ms;
-  border: 2px solid #0065fc
+  border: 2px solid #0065fc;
 }
 .icon-filter {
   color: #0065fc;
@@ -177,7 +203,7 @@ li {
   color: #0065fc;
   padding: 2px 5px 2px 5px;
   border-radius: 60px;
-  border: 3px solid rgb(242, 242, 242);
+  border: 3px solid #f2f2f2;
   font-size: 13px;
   margin-right: 10px;
 }
@@ -191,7 +217,6 @@ li {
   display: flex;
   justify-content: space-around;
   flex-grow: 1;
-  
 }
 .partHebergements {
   background-color: #f2f2f2;
@@ -219,33 +244,35 @@ span {
   font-size: 0.7em;
   display: flex;
   justify-content: left;
-  color:#f2f2f2 ;
+  color: #f2f2f2;
 }
 /* Régagles des ratings */
-.rating1 i:nth-of-type(5) { /* Grâce à "direction: rtl", le sens est inversé, Je sélectionne l'élément qui se trouve à cet emplacement (5) , c'est l'étoile 1 */
+.rating1 i:nth-of-type(5) {
+  /* Grâce à "direction: rtl", le sens est inversé, Je sélectionne l'élément qui se trouve à cet emplacement (5) , c'est l'étoile 1 */
   color: #0065fc; /* L'étoile 1 sera bleu */
 }
 .rating2 i:nth-of-type(4)~i, /* Je sélectionne les élements qui sont après (4), je sélectionne l'étoile 1 (5)*/
-.rating2 i:nth-of-type(4) { /* Je sélectionne l'étoile 2 (4) */
+.rating2 i:nth-of-type(4) {
+  /* Je sélectionne l'étoile 2 (4) */
   color: #0065fc; /* L'étoile 1 et 2 seront bleu*/
 }
 /* Je repète l'opération pour les autres étoiles */
-.rating3 i:nth-of-type(3)~i,
+.rating3 i:nth-of-type(3) ~ i,
 .rating3 i:nth-of-type(3) {
   color: #0065fc;
 }
 
-.rating4 i:nth-of-type(2)~i,
+.rating4 i:nth-of-type(2) ~ i,
 .rating4 i:nth-of-type(2) {
   color: #0065fc;
 }
 
-.rating5 i:nth-of-type(1)~i,
+.rating5 i:nth-of-type(1) ~ i,
 .rating5 i:nth-of-type(1) {
   color: #0065fc;
 }
 /* Partie gauche */
-.partHebergements-left{
+.partHebergements-left {
   margin-right: 20px;
 }
 .part-left {
@@ -253,7 +280,6 @@ span {
   flex-direction: row;
   flex-wrap: wrap;
   margin: 20px 0px 0px 20px;
-
 }
 .imgHebergement-left {
   width: 260px;
@@ -270,13 +296,13 @@ span {
   margin-bottom: 30px;
   cursor: pointer;
 }
-#btn-more:hover{
+#btn-more:hover {
   transform: scale(1.1);
   transition: 100ms;
 }
 /* Partie droite */
-.part-right{
-  margin:0px 20px
+.part-right {
+  margin: 0px 20px;
 }
 #container-title-hebergement {
   display: flex;
@@ -327,7 +353,7 @@ span {
 .imgSmall {
   min-width: 330px;
   height: 180px;
-} 
+}
 /* Footer */
 footer {
   background-color: #f2f2f2;
@@ -343,74 +369,100 @@ footer {
 .itemFooter {
   line-height: 30px;
 }
-.itemFooter:hover{
+.itemFooter:hover {
   color: #0065fc;
 }
 
 /* Media queries */
-@media screen and (max-width:1462px) {
+@media screen and (max-width: 1462px) {
   /* Section 2 */
-  #hebergements{
+  #hebergements {
     flex-direction: column;
   }
-  .partHebergements-left{
+  .partHebergements-left {
     margin-bottom: 20px;
     width: 100%;
   }
   /* Section 3 */
-  #activities{
-  overflow: auto;
+  #activities {
+    overflow: auto;
   }
 }
-@media screen and (max-width:972px){
-  #container-filters{
+@media screen and (max-width: 972px) {
+  #container-filters {
     display: block;
   }
 }
-@media screen and (max-width:710px){
-  footer{
+@media screen and (max-width: 710px) {
+  footer {
     display: flex;
     flex-direction: column;
     gap: 0;
   }
 }
-@media screen and (max-width:376px){
-  #main-content{
-    padding:0;
-  }
-  #activities,#introduction{
-    padding:0 15px;
-  }
-  #container-navDesktop{
+@media screen and (max-width: 541px) {
+  /* Header */
+  #container-navDesktop {
     display: none;
   }
-  #container-navMobile{
+  #container-navMobile {
     display: flex;
     flex-direction: column;
   }
-  #hebergements{
+  #nav-mobile {
+    display: flex;
+    flex-direction: row;
+    flex-grow: 1;
+    width: 100%;
+    justify-content: center;
+  }
+  #logoReservia{
+    margin: 0 15px;
+  }
+  nav {
+    margin: 0;
+    flex-grow: 1;
+    width: 100%;
+  }
+  /* Général */
+  #main-content {
+    padding: 0;
+  }
+  #activities,
+  #introduction {
+    padding: 0 15px;
+  }
+  /* Section 2 */
+  #hebergements {
     display: flex;
     flex-direction: column-reverse;
   }
-  .imgHebergement-left{
+  .imgHebergement-left {
     width: 100%;
     height: inherit;
   }
-  .partHebergements-right{
+  .partHebergements-right {
     margin-bottom: 20px;
   }
-    /* Section 3 */
-  #activities{
-    overflow:unset;
+  /* Section 3 */
+  #activities {
+    overflow: unset;
   }
-  #activity-list{
+  #activity-list {
     display: flex;
     flex-direction: column;
   }
-  .figure-activity{
+  .figure-activity {
     margin: 0 0 15px 0;
   }
-  footer{
+  .imgTall {
+    min-width: 100%;
+  }
+  .imgSmall {
+    min-width: 100%;
+  }
+  /* Footer */
+  footer {
     padding: 20px;
   }
 }
