@@ -416,7 +416,7 @@ footer {
     width: 100%;
     justify-content: center;
   }
-  #logoReservia{
+  #logoReservia {
     margin: 0 15px;
   }
   nav {
@@ -464,5 +464,12 @@ footer {
   /* Footer */
   footer {
     padding: 20px;
+  }
+}
+@media screen and (max-width: 375px){
+  #search{
+  margin-top: 5px;
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
   }
 }
