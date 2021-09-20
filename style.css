@@ -26,7 +26,7 @@ body {
   margin: 0;
 }
 #main-content {
-  padding: 30px 60px;
+  padding: 0px 60px;
   box-sizing: border-box;
 }
 a {
@@ -55,41 +55,13 @@ header {
   flex-wrap: wrap;
   justify-content: space-between;
 }
-/* Header version mobile */
-#container-navMobile {
-  display: flex;
-  flex-direction: column;
-  width: 100%;
-}
-#container-logo {
-  display: flex;
-  width: 100%;
-  justify-content: space-between;
-}
-#nav-mobile {
-  display: flex;
-  width: 100%;
-  justify-content: center;
-  text-align: center;
-}
-#nav-hebergement-mobile {
-  color: #0065fc;
-  border-bottom: 2px solid #0065fc;
-  flex-grow: 1;
-}
-#nav-activity-mobile {
-  border-bottom: 2px solid #f2f2f2;
-  flex-grow: 1;
-}
-
-/* Header version Desktop */
-#container-navDesktop {
+header {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
   width: 100%;
 }
-.logoReservia {
+#logoReservia {
   margin: 0 60px;
   width: 100px;
   object-fit: contain;
@@ -112,17 +84,15 @@ nav {
 #nav-activity {
   color: black;
 }
-.nav-inscription {
+#nav-inscription {
   color: #0065fc;
   font-weight: 700;
-}
-#container-navMobile {
-  display: none;
 }
 /* Section 1 */
 /* SearchBar */
 form {
   margin-top: 20px;
+  display: flex;
 }
 .fa-map-marker-alt {
   background-color: #f2f2f2;
@@ -245,8 +215,8 @@ span {
 }
 /* Régagles des ratings */
 /* nth-of-type permet de cibler un enfant de la liste */
-.rating1 i:nth-of-type(5) { 
-/* Grâce à "direction: rtl", le sens est inversé, Je sélectionne l'élément qui se trouve à cet emplacement (5) , c'est l'étoile 1 */
+.rating1 i:nth-of-type(5) {
+  /* Grâce à "direction: rtl", le sens est inversé, Je sélectionne l'élément qui se trouve à cet emplacement (5) , c'est l'étoile 1 */
   color: #0065fc; /* L'étoile 1 sera bleu */
 }
 /* Avec le sélecteur adjacence indirecte je sélectionne tous les frères de mon sélecteur.*/
@@ -370,25 +340,27 @@ footer {
 .itemFooter:hover {
   color: #0065fc;
 }
-
 /* Media queries */
+@media screen and (max-width: 1864px) {
+}
 @media screen and (max-width: 1462px) {
-  /* Section 2 */
-  #hebergements {
-    flex-direction: column;
-  }
-  .partHebergements-left {
-    margin-bottom: 20px;
-    width: 100%;
-  }
   /* Section 3 */
   #activities {
     overflow: auto;
   }
 }
 @media screen and (max-width: 972px) {
+  /* Section 1 */
   #container-filters {
     display: block;
+  }
+  /* Section 2 */
+  #hebergements {
+    flex-direction: column-reverse;
+  }
+  .partHebergements-left {
+    margin-bottom: 20px;
+    width: 100%;
   }
 }
 @media screen and (max-width: 710px) {
@@ -400,18 +372,34 @@ footer {
 }
 @media screen and (max-width: 541px) {
   /* Header */
-  #container-navDesktop {
-    display: none;
-  }
-  #container-navMobile {
+  nav {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
+    flex-grow: 1;
+    width: 100%;
+    justify-content: center;
+    text-align: center;
   }
-  .logoReservia {
+  #nav-hebergement {
+    color: #0065fc;
+    border-top: none;
+    border-bottom: 2px solid #0065fc;
+    flex-grow: 1;
+  }
+  #nav-activity {
+    border-bottom: 2px solid #f2f2f2;
+    flex-grow: 1;
+  }
+  #logoReservia {
     margin: 0 15px;
   }
   nav {
     margin: 0;
+  }
+  #nav-inscription {
+    position: absolute;
+    top: 0;
+    right: 0;
   }
   /* Général */
   #main-content {
@@ -422,11 +410,8 @@ footer {
     padding: 0 15px;
   }
   /* Section 2 */
-  #hebergements {
-    display: flex;
-    flex-direction: column-reverse;
-  }
-  .partHebergements-left{
+
+  .partHebergements-left {
     background-color: transparent;
   }
   .imgHebergement-left {
@@ -435,6 +420,7 @@ footer {
   }
   .partHebergements-right {
     padding-bottom: 20px;
+    border-radius: 0;
   }
   /* Section 3 */
   #activities {
@@ -458,10 +444,10 @@ footer {
     padding: 20px;
   }
 }
-@media screen and (max-width: 375px){
-  #search{
-  margin-top: 5px;
-  border-top-left-radius: 10px;
-  border-bottom-left-radius: 10px;
+@media screen and (max-width: 375px) {
+  #search {
+    margin-top: 5px;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
   }
 }
