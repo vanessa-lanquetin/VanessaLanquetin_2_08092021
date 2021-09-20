@@ -92,7 +92,7 @@ header {
   justify-content: space-between;
   width: 100%;
 }
-#logoReservia {
+.logoReservia {
   margin: 0 60px;
   width: 100px;
   object-fit: contain;
@@ -115,7 +115,7 @@ nav {
 #nav-activity {
   color: black;
 }
-#nav-inscription {
+.nav-inscription {
   color: #0065fc;
   font-weight: 700;
 }
@@ -416,7 +416,7 @@ footer {
     width: 100%;
     justify-content: center;
   }
-  #logoReservia {
+  .logoReservia {
     margin: 0 15px;
   }
   nav {
