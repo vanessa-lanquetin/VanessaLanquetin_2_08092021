@@ -27,14 +27,15 @@ nav {
   object-fit: contain;
 }
 
-@media screen and (max-width:651px){
-    nav {
+@media screen and (max-width: 651px) {
+  nav {
     display: flex;
     flex-direction: row;
     flex-grow: 1;
     width: 100%;
     justify-content: center;
     text-align: center;
+    margin: 0;
   }
   #nav-hebergement {
     color: #0065fc;
@@ -48,9 +49,6 @@ nav {
   }
   #logoReservia {
     margin: 0 15px;
-  }
-  nav {
-    margin: 0;
   }
   #nav-inscription {
     position: absolute;
