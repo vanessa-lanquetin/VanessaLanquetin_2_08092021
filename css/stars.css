@@ -1,0 +1,47 @@
+/* Rating stars */
+/* Définition du style de l'étoile */
+.rating {
+  direction: rtl; /* Direction inversée pour que ça s'affiche correctement */
+  font-size: 0.7em;
+  display: flex;
+  justify-content: left;
+  color: #f2f2f2;
+}
+/* Régagles des ratings */
+/* nth-of-type permet de cibler un enfant de la liste */
+.rating1 i:nth-of-type(5) {
+  /* Grâce à "direction: rtl", le sens est inversé, Je sélectionne l'élément qui se trouve à cet emplacement (5) , c'est l'étoile 1 */
+  color: #0065fc; /* L'étoile 1 sera bleu */
+}
+/* Avec le sélecteur adjacence indirecte je sélectionne tous les frères de mon sélecteur.*/
+.rating2 i:nth-of-type(4)~i, 
+/* Je sélectionne les frères qui sont après (4), je sélectionne l'étoile 1 (5) */
+.rating2 i:nth-of-type(4) {
+  /* Je sélectionne l'étoile 2 (4) */
+  color: #0065fc; /* L'étoile 1 et 2 seront bleu*/
+}
+/* Je repète l'opération pour les autres étoiles */
+.rating3 i:nth-of-type(3) ~ i,
+.rating3 i:nth-of-type(3) {
+  color: #0065fc;
+}
+.rating4 i:nth-of-type(2) ~ i,
+.rating4 i:nth-of-type(2) {
+  color: #0065fc;
+}
+.rating5 i:nth-of-type(1) ~ i,
+.rating5 i:nth-of-type(1) {
+  color: #0065fc;
+}
+@media screen and (max-width: 2700px) {
+  .rating{
+    font-size: 0.8em;
+  }
+}
+@media screen and (max-width:1120px){
+  .rating{
+    font-size: 1em;
+    margin-bottom: 10px;  
+  }
+
+}

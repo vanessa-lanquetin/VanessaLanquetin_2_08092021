@@ -1,0 +1,60 @@
+nav {
+  display: flex;
+  margin: 0 60px;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+.nav-items {
+  padding: 20px;
+  text-decoration: none;
+  cursor: pointer;
+}
+#nav-hebergement {
+  color: #0065fc;
+  border-top: 2px solid #0065fc;
+}
+#nav-activity {
+  color: black;
+}
+#nav-inscription {
+  color: #0065fc;
+  font-weight: 700;
+}
+
+#logoReservia {
+  margin: 0 60px;
+  width: 100px;
+  object-fit: contain;
+}
+
+@media screen and (max-width:651px){
+    nav {
+    display: flex;
+    flex-direction: row;
+    flex-grow: 1;
+    width: 100%;
+    justify-content: center;
+    text-align: center;
+  }
+  #nav-hebergement {
+    color: #0065fc;
+    border-top: none;
+    border-bottom: 2px solid #0065fc;
+    flex-grow: 1;
+  }
+  #nav-activity {
+    border-bottom: 2px solid #f2f2f2;
+    flex-grow: 1;
+  }
+  #logoReservia {
+    margin: 0 15px;
+  }
+  nav {
+    margin: 0;
+  }
+  #nav-inscription {
+    position: absolute;
+    top: 0;
+    right: 0;
+  }
+}
