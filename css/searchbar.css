@@ -15,7 +15,7 @@ input {
   padding: 10px;
   font-weight: bold;
 }
-#search {
+.btn-search {
   background-color: #0065fc;
   color: #ffffff;
   border-top-right-radius: 10px;
@@ -24,17 +24,22 @@ input {
   padding: 10px;
   cursor: pointer;
 }
+#search-mobile{
+  display: none;
+}
 #search:hover {
   transform: scale(1.1);
 }
 @media screen and (max-width: 2700px){
-  input, #search{
+  input, #search-mobile{
     font-size: 0.9em;
   }
 }
-@media screen and (max-width: 375px) {
-  /* Section 1 */
-  input{
-    min-width: 110px;
+@media screen and (max-width: 600px) {
+  #search-desktop{
+    display: none;
+  }
+  #search-mobile{
+    display: block;
   }
 }

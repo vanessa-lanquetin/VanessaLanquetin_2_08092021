@@ -12,13 +12,13 @@
 .container-activity-column {
   display: flex;
   flex-direction: column;
-  height: 350px;
+  height: 500px;
   width: 25%;
 }
 
 #activity-list,
 .container-activity-column {
-  gap: 20px;
+  gap: 40px;
 }
 
 .container-activity-column a,
@@ -33,26 +33,26 @@
   .container-activity-column {
     height:auto;
   }
-  #activities {
-    overflow: auto;
-  }
-  #activity-list {
-    overflow: auto;
-  }
 }
-@media screen and (max-width: 890px) {
-  #activities {
-    padding: 40px;
-  }
+@media screen and (max-width: 1100px){
   #activity-list {
-    flex-direction: column;
-  }
-  .container-activity-column {
-    width: auto;
-    height: auto;
-  }
-  .container-activity-column a .card .card-img {
-    height: 180px;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: max-content;
+  flex-grow: 1;
+  gap: 25px;
+}
+.container-activity-column a .card {
+  min-width: 400%;
+  width: 100%;
+}
+}
+@media screen and (max-width: 601px){
+  #activity-list {
+    grid-template-columns: repeat(1, 1fr);
+}
+  #activities{
+  padding: 40px;    
   }
 }
 @media screen and (max-width: 376px){

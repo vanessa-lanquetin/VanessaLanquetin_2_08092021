@@ -73,6 +73,12 @@ li {
   body{
     font-size: 14px;
   }
+    h2{
+    font-size: 1.5em;
+  }
+  h3{
+    font-size: 1.2em;
+  }
 }
 @media screen and (max-width: 1441px) {
   h2{

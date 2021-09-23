@@ -46,7 +46,7 @@
     font-size: 0.9em;
   }
 }
-@media screen and (max-width: 1120px){
+@media screen and (max-width: 1225px){
     #hebergements {
     flex-direction: column-reverse;
     
