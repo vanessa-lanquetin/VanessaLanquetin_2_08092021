@@ -9,18 +9,18 @@
   width: 33%;
 }
 
-@media screen and (max-width: 1225px) {
+@media screen and (max-width: 1300px) {
   .partHebergements-right {
     min-width: 100%;
     width: 100%;
   }
 }
-@media screen and (max-width: 720px){
+@media screen and (max-width: 769px){
   .partHebergements-right {
   width: 100%;
   }
 }
-@media screen and (max-width: 361px) {
+@media screen and (max-width: 425px) {
   #popular {
     margin: 10px 0;
   }

@@ -38,7 +38,7 @@
     font-size: 0.8em;
   }
 }
-@media screen and (max-width:1120px){
+@media screen and (max-width:1300px){
   .rating{
     font-size: 1em;
     margin-bottom: 10px;  

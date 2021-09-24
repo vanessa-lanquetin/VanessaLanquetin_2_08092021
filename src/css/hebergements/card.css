@@ -60,32 +60,38 @@
     margin-top: 5px;
   }
   .card.alt {
-  flex-direction: row;
-  height: 150px;
-}
+    flex-direction: row;
+    height: 150px;
+  }
 }
 @media screen and (max-width: 1890px) {
   .card .price-night {
-    font-size: 1.1em;
+    font-size: 1em;
   }
 }
-@media screen and (max-width: 1441px) {
-  .card .price-night {
-    font-size: 0.9em;
+@media screen and (max-width: 1445px) {
+  .card.alt .card-img {
+    max-width: 50%;
+  }
+  .card .card-img {
+    width: 100%;
+    height: 117px;
   }
 }
-@media screen and (max-width: 1120px) {
+@media screen and (max-width: 1300px) {
   .card .card-img {
     height: 200px;
   }
   .card.alt {
     height: 165px;
   }
-}
-
-@media screen and (max-width: 1120px) {
   .card .price-night {
     font-size: 1em;
     margin-top: 5px;
+  }
+}
+@media screen and (max-width: 769px) {
+  #part-left .card .card-img {
+    height: 298px;
   }
 }

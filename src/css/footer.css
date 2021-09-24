@@ -20,17 +20,15 @@ footer {
     display: flex;
     flex-direction: column;
   }
-  .container-itemsFooter{
+  .container-itemsFooter {
     margin-bottom: 20px;
   }
-}  
-  @media screen and (max-width: 541px) {
-.container-itemsFooter {
-    padding:10px 20px;
-  }
 }
-@media screen and (max-width: 376px){
-  footer{
-  padding: 15px;    
+@media screen and (max-width: 600px) {
+  .container-itemsFooter {
+    padding: 10px 20px;
+  }
+  footer {
+    padding: 15px;
   }
 }

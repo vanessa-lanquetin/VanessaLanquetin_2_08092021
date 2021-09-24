@@ -32,19 +32,6 @@ a {
   color: black;
 }
 
-/* header */
-header {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-}
-header {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  width: 100%;
-}
-
 ul {
   display: flex;
   padding: 0;
@@ -61,7 +48,7 @@ li {
     padding: 0px 250px;
     box-sizing: border-box;
   }
-  body{
+  body {
     font-size: 20px;
   }
 }
@@ -70,45 +57,29 @@ li {
     padding: 0px 60px;
     box-sizing: border-box;
   }
-  body{
-    font-size: 14px;
-  }
-    h2{
-    font-size: 1.5em;
-  }
-  h3{
-    font-size: 1.2em;
-  }
-}
-@media screen and (max-width: 1441px) {
-  h2{
-    font-size: 1em;
-  }
-  h3{
-    font-size: 1em;
-  }
-  /* Général */
   body {
-    font-family: "Raleway";
-    padding: 0;
-    margin: 0;
-    font-size: 16px;
+    font-size: 17px;
   }
-  #main-content {
-    padding: 0px 60px;
-    box-sizing: border-box;
+  h2 {
+    font-size: 1.5em;
+    margin-bottom: 5px;
   }
-}
-@media screen and (max-width: 1025px) {
-  h2{
-    font-size: 1.2em;
-  }
-  h3{
+  h3 {
     font-size: 1.1em;
   }
-
+  h4 {
+    font-size: 1.1em;
+  }
 }
-@media screen and (max-width: 541px) {
+@media screen and (max-width: 1445px) {
+  #main-content {
+    padding: 0px 26px;
+  }
+  h3 {
+    font-size: 1em;
+  }
+}
+@media screen and (max-width: 600px) {
   #main-content {
     padding: 0;
   }

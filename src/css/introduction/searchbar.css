@@ -27,15 +27,15 @@ input {
 #search-mobile{
   display: none;
 }
-#search:hover {
+.btn-search:hover {
   transform: scale(1.1);
 }
 @media screen and (max-width: 2700px){
-  input, #search-mobile{
+  input{
     font-size: 0.9em;
   }
 }
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 425px) {
   #search-desktop{
     display: none;
   }
