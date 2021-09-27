@@ -8,14 +8,15 @@
   display: flex;
   flex-grow: 1;
 }
-
+#activity-list .card{
+  padding: 0;
+}
 .container-activity-column {
   display: flex;
   flex-direction: column;
   height: 500px;
   width: 25%;
 }
-
 #activity-list,
 .container-activity-column {
   gap: 40px;

@@ -11,7 +11,7 @@ h2 {
 }
 h3 {
   font-weight: bold;
-  font-size: 0.9em;
+  font-size: 1.1em;
   margin-bottom: 3px;
 }
 h4 {
@@ -43,19 +43,26 @@ li {
   list-style: none;
 }
 
-@media screen and (max-width: 2700px) {
-  #main-content {
-    padding: 0px 250px;
+@media screen and (max-width: 3401px) {
+  main {
+    padding: 0px 450px;
     box-sizing: border-box;
   }
   body {
     font-size: 20px;
   }
+  h3{
+    font-size: 1.5;
+  }
+}
+@media screen and (max-width: 2700px){
+    main {
+    padding: 0px 200px;
+  }
 }
 @media screen and (max-width: 1890px) {
-  #main-content {
-    padding: 0px 60px;
-    box-sizing: border-box;
+  main {
+    padding: 0px 200px;
   }
   body {
     font-size: 17px;
@@ -72,15 +79,15 @@ li {
   }
 }
 @media screen and (max-width: 1445px) {
-  #main-content {
-    padding: 0px 26px;
+  main {
+    padding: 0px 16px;
   }
   h3 {
     font-size: 1em;
   }
 }
 @media screen and (max-width: 600px) {
-  #main-content {
+  main {
     padding: 0;
   }
 }
