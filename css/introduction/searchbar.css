@@ -20,8 +20,8 @@ input {
   color: #ffffff;
   border-top-right-radius: 10px;
   border-bottom-right-radius: 10px;
-  border-color: #0065fc;
   padding: 10px;
+  border-color: transparent;
   cursor: pointer;
 }
 #search-mobile{
