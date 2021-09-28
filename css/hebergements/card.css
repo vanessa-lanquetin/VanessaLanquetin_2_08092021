@@ -54,9 +54,9 @@
   object-fit: cover;
 }
 
-@media screen and (max-width: 34001px) {
+@media screen and (max-width: 3401px) {
   .card .price-night {
-    font-size: 1em;
+    font-size: 0.8em;
     margin-top: 5px;
   }
   .card.alt {

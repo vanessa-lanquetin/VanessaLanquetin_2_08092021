@@ -27,7 +27,7 @@ nav {
   border-top: 2px solid #0065fc;
   transition: 100ms;
 }
-@media screen and (max-width: 769px) {
+@media screen and (max-width: 698px) {
   nav {
     display: flex;
     flex-direction: row;

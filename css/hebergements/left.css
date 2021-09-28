@@ -21,7 +21,7 @@
   }
 }
 
-@media screen and (max-width: 427px){
+@media screen and (max-width: 600px){
     .partHebergements-left {
   background-color: transparent;
   }
