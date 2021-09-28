@@ -28,23 +28,23 @@ nav {
   transition: 100ms;
 }
 @media screen and (max-width: 3401px) {
-  #logoReservia {
+  #logoReservia,nav {
     margin: 0px 450px;
   }
 }
 @media screen and (max-width: 2700px){
-    #logoReservia {
+    #logoReservia,nav {
     margin: 0px 200px;
   }
 }
 @media screen and (max-width: 1890px) {
-  #logoReservia {
+  #logoReservia,nav {
     margin: 0px 200px;
   }
 
 }
 @media screen and (max-width: 1445px) {
-  #logoReservia {
+  #logoReservia,nav {
     margin: 0px 15px;
   }
 
