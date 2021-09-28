@@ -61,9 +61,6 @@ li {
   }
 }
 @media screen and (max-width: 1890px) {
-  main {
-    padding: 0px 200px;
-  }
   body {
     font-size: 17px;
   }

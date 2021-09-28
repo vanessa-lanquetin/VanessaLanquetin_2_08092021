@@ -27,6 +27,29 @@ nav {
   border-top: 2px solid #0065fc;
   transition: 100ms;
 }
+@media screen and (max-width: 3401px) {
+  #logoReservia {
+    margin: 0px 450px;
+  }
+}
+@media screen and (max-width: 2700px){
+    #logoReservia {
+    margin: 0px 200px;
+  }
+}
+@media screen and (max-width: 1890px) {
+  #logoReservia {
+    margin: 0px 200px;
+  }
+
+}
+@media screen and (max-width: 1445px) {
+  #logoReservia {
+    margin: 0px 15px;
+  }
+
+}
+
 @media screen and (max-width: 698px) {
   nav {
     display: flex;
